@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit Data Explorer (No API)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reddit Data Explorer</h1>
+    <form id="reddit-form">
+      <input type="text" id="reddit-input" placeholder="Enter subreddit, user, or post URL" required>
+      <button type="submit">Fetch Posts</button>
+    </form>
+    <div id="filters" style="margin-bottom:1em;display:none;">
+      <input type="text" id="filter-keyword" placeholder="Filter by keyword">
+      <input type="text" id="filter-author" placeholder="Filter by author">
+      <input type="date" id="filter-date-start" title="Start date">
+      <input type="date" id="filter-date-end" title="End date">
+      <button id="apply-filters">Apply Filters</button>
+      <button id="clear-filters" type="button">Clear</button>
+    </div>
+    <div id="filter-feedback" style="margin-bottom:0.5em;color:#0079d3;font-weight:500;"></div>
+    <div id="sort-dropdown" style="margin-bottom:0.5em;"></div>
+    <div id="results"></div>
+    <div id="pagination" style="margin-top:0.5em;text-align:center;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
