@@ -13,17 +13,22 @@
       <input type="text" id="reddit-input" placeholder="Enter subreddit, user, or post URL" required>
       <button type="submit">Fetch Posts</button>
     </form>
-    <div id="filters" style="margin-bottom:1em;display:none;">
+    <div id="filters" style="display:none;">
       <input type="text" id="filter-keyword" placeholder="Filter by keyword">
       <input type="text" id="filter-author" placeholder="Filter by author">
       <input type="date" id="filter-date-start" title="Start date">
       <input type="date" id="filter-date-end" title="End date">
       <button id="apply-filters">Apply Filters</button>
       <button id="clear-filters" type="button">Clear</button>
+
     </div>
-    <button id="load-all-posts" style="display:none;margin-bottom:1em;">Load All Posts</button>
+    <div id="sort-dropdown" style="margin: 1em 0;"></div>
+
+    <div id="sort-dropdown" style="display:none;"></div>
+    <div id="filter-feedback"></div>
     <div id="results"></div>
+    <div id="pagination"></div>
+    <button id="load-all-posts" style="display:none;margin-top:1em;">Load All Posts (Reeeeddit Mode)</button>
   </div>
   <script src="script.js"></script>
 </body>
-</html> 
